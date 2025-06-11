@@ -5,7 +5,7 @@ services:
     buildCommand: ""
     startCommand: "python feedback_bot.py"
     envVars:
-      - key: BOT_TOKEN
+      - key: 7607383287:AAFPQatV3NC-xnUe_GRtBoPI0-OWRDS4ucs
         value: your_bot_token_here
-      - key: ADMIN_ID
+      - key: 369596135
         value: your_admin_id_here
