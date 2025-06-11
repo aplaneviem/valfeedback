@@ -32,8 +32,6 @@ async def forward_to_admin(update: Update, context: ContextTypes.DEFAULT_TYPE):
         reply_markup=keyboard
     )
 
-    await update.message.reply_text("Сообщение отправлено админу. Спасибо!")
-
 # Обработка нажатия на кнопку "Ответить"
 async def handle_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
