@@ -2,15 +2,15 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, CallbackQueryHandler, ContextTypes, filters
 import os
 
-TOKEN = "7607383287:AAFPQatV3NC-xnUe_GRtBoPI0-OWRDS4ucs"
-ADMIN_ID = 369596135
+TOKEN = "7840014112:AAHz6su__vwFiDXVWJewNrBfB4Q8IblDHqw"
+ADMIN_ID = 7781795931
 
 # Для хранения активного ответа
 pending_replies = {}
 
 # Команда /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Привет! Напиши сюда сообщение, и я передам его админу.")
+    await update.message.reply_text("Привет! Чем могу помочь?")
 
 # Пересылка сообщений от пользователей админу
 async def forward_to_admin(update: Update, context: ContextTypes.DEFAULT_TYPE):
